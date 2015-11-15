@@ -8,7 +8,7 @@ $(document).ready(function(){
                     var $inp = $('<input type="hidden" value="0">');
                         if($elem.attr("name")){
                             $inp.attr("name",$elem.attr("name"));}
-                   var $check = $('<div>');
+                    var $check = $('<div>');
                         $check.attr('class','checkbox');
                     var elem_attr = $elem.prop("attributes");
                     $.each(elem_attr, function() {
@@ -37,7 +37,6 @@ $(document).ready(function(){
     })(jQuery);
     
     
-    var a = $("input[type=checkbox]").prop("attributes");
     $("input[type=checkbox]").iosCheckers();
 
 });

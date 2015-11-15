@@ -10,6 +10,9 @@
     background-color:#FAFAFA;
     border: 1px solid #D1D1D1;
     display:inline-block;
+    
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: 1s;
 }
 
 .checkbox:after{
@@ -17,15 +20,20 @@
 	width:20px;
 	height:20px;
 	position:relative;
-
+        left:0px;
 	top:-1px;
 	background-color: #FAFAFA;
 	border:1px solid #D1D1D1;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
-
+        
+        -webkit-transition-property: left;
+        -webkit-transition-duration: 1s;
+        
 	display:block;
+        
+       
 }
 
 .checked{
@@ -44,6 +52,9 @@
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
+        
+        -webkit-transition-property: left;
+        -webkit-transition-duration: 1s;
 
 	display:block;
 }
