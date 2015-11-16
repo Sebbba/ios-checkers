@@ -18,13 +18,15 @@
 
             $check.wrap($inp);
                 $check.on('click',function(event) {
-                    if($(this).hasClass('checked')){
-                        $(this).removeClass('checked');
+                    $checker = $(this)
+                    if($checker.hasClass('checked')){
+                        $checker.removeClass('checked');
                         $inp.attr("value",0);
                     }else {
-                        $(this).addClass('checked');
+                        $checker.addClass('checked');
                         $inp.attr("value",1);
                     }
+                    $checker.trigger('change', $inp.val());
                 });
             $(this).replaceWith($check);
             });
