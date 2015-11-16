@@ -1,5 +1,6 @@
-function iosCheckersClass() {
-    this.render = function(jQuerySelector) {
+var iosCheckersClass =  function() {};
+
+iosCheckersClass.prototype.render = function(jQuerySelector) {
         var $elems = $(jQuerySelector);
         
         var make = function(){
@@ -33,7 +34,5 @@ function iosCheckersClass() {
                 });
         }
         return $elems.each(make);
-    }
 }
-
 
