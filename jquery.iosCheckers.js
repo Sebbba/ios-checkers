@@ -20,10 +20,12 @@
                 $check.on('click',function(event) {
                     if($(this).hasClass('checked')){
                         $(this).removeClass('checked');
-                        $inp.attr("value",0);
+                            $(this).trigger('change');
+                                $inp.attr("value",0);
                     }else {
                         $(this).addClass('checked');
-                        $inp.attr("value",1);
+                            $(this).trigger('change');
+                                $inp.attr("value",1);
                     }
                 });
             $(this).replaceWith($check);
