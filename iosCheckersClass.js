@@ -39,3 +39,10 @@ iosCheckersCreator.prototype.render = function(jQuerySelector) {
         return $elems.each(make);
 }
 
+iosCheckersCreator.prototype.initEvents = function(){
+    //
+}
+
+iosCheckersCreator.prototype.destroy = function(){
+    //
+}
