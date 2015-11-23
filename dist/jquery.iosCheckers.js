@@ -18,7 +18,7 @@
                         $check.attr(this.name, this.value);
                     }
                 });
-                $check.wrap($inp);
+                $check.append($inp);
 
                 $check.on('click', function (event) {
                     var $checker = $(this);
