@@ -1,0 +1,18 @@
+{
+  "name": "ios-checkers",
+  "homepage": "https://github.com/Sebbba/ios-checkers",
+  "authors": [
+    "Denis Sebov <dsiebov@gmail.com>"
+  ],
+  "description": "iOS like checkboxes",
+  "keywords": [
+    "checkbox",
+    "ios",
+    "plugin",
+    "jquery"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
