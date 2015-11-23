@@ -35,8 +35,11 @@
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="jquery.iosCheckers.js"></script>
-        <script type="text/javascript">
-            $("input[type=checkbox]").iosCheckers();
-        </script>
-    </body>
+    <script src="iosCheckersCreator.js"></script>
+    <script type="text/javascript">
+        //$("input[type=checkbox]").iosCheckers();
+        var iosCheckers = new iosCheckersCreator();
+        iosCheckers.render("input[type=checkbox]");
+    </script>
+</body>
 </html>
